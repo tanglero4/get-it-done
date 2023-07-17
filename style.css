@@ -1,0 +1,42 @@
+:root{
+    --main-color:rgb(198, 161, 233);
+}
+body{
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    color: var(--main-color);
+    text-align: center;
+}
+.toDo-container{
+    background: aliceblue;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(170, 260, 275, .25);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+.input-container{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.toDo-input{
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+}
+.toDo-input:focus{
+    outline: none;
+}
+
+#task-btn{
+    background-color: var(--main-color);
+    border:none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+}
