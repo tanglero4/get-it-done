@@ -9,3 +9,8 @@ const addTask = ()=>{
         const taskText = createTaskText(userInput)
     }
 }
+
+const createTaskText = (userInput)=>{
+    const taskText = document.createElement('li');
+    taskText.className= "toDo-item";    
+}
