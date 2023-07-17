@@ -9,6 +9,9 @@ h1{
     color: var(--main-color);
     text-align: center;
 }
+ul{
+    list-style: none;
+}
 .toDo-container{
     background: aliceblue;
     border-radius: 4px;

@@ -34,3 +34,14 @@ const createTaskText = (userInput)=>{
 
     return taskText;
 };
+const deleteInput = (event) =>{
+    const taskText = event.target.parentNode;
+    toDoList.removeChild(taskText);
+};
+
+addTaskBtn.addEventListener('click', addTask);
+toDoInput.addEventListener('keydown', function (event){
+    if(event.key === 'Enter'){
+        addTask();
+    }
+})
