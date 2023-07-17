@@ -6,7 +6,9 @@ const addTask = ()=>{
     const userInput = toDoInput.value.trim();
 
     if (userInput !==''){
-        const taskText = createTaskText(userInput)
+        const taskText = createTaskText(userInput);
+        toDoList.appendChild(taskText);
+        toDoInput.value = '';
     }
 }
 
@@ -25,4 +27,10 @@ const createTaskText = (userInput)=>{
     deleteBtn.textContent = 'Delete';
     document.classList.add('delete');
     deleteBtn.addEventListener('click', deleteInput);
-}
+
+    taskText.appendChild(checkbox);
+    taskText.appendChild(userInputSpan);
+    taskText.appendChild(deleteBtn);
+
+    return taskText;
+};
