@@ -12,11 +12,12 @@ h1{
 ul{
     list-style: none;
 }
+
 .toDo-container{
     background: aliceblue;
     border-radius: 50px;
     box-shadow: -20px 20px 60px #b6cfd9,
-                20px -20px 60px #f6ffff;
+                 20px -20px 60px #f6ffff;
     margin: 0 auto;
     max-width: 600px;
     padding: 20px;
@@ -26,21 +27,47 @@ ul{
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 .toDo-input{
     border-radius: 20px;
     border: none;
     padding: 15px;
     width: 100%;
+    color: var(--main-color); 
+    
 }
 .toDo-input:focus{
     outline: none;
 }
-
+.toDo-list{
+    padding: 0px;
+}
+.toDo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--main-color);   
+}
+.deleteBtn{
+    border: none;
+    border-radius: 36px;
+    background: #d0aaf3;
+    box-shadow: -7px 7px 14px #cca7ee,
+                 7px -7px 14px #d4adf8;
+    color: white;
+    padding: 20px;
+}
 #task-btn{
-    background-color: var(--main-color);
-    border:none;
-    border-radius: 20px;
+    background: #d0aaf3;
+    border-radius: 36px;
+    box-shadow: -7px 7px 14px #cca7ee,
+                 7px -7px 14px #d4adf8;
+    border:none;  
     color: white;
     padding: 15px;
 }

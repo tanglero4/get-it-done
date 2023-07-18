@@ -25,7 +25,7 @@ const createTaskText = (userInput)=>{
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
-    deleteBtn.classList.add('delete');
+    deleteBtn.classList.add('deleteBtn');
     deleteBtn.addEventListener('click', deleteInput);
 
     taskText.appendChild(checkbox);
